@@ -1,0 +1,149 @@
+
+/* Reset básico */
+body, h1, h3, h4, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #f4e4b7;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #000;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Impact', sans-serif;
+    margin: 20px 0 10px 0;
+    color: #f4e4b7;
+}
+
+h3 {
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+article {
+    background-color: #2e2e2e;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: scale(1.05);
+    background-color: #3c3c3c;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h4 {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 10px 0;
+    background-color: #111;
+    color: #888;
+    font-size: 12px;
+}
+
+
+
+/* Página de Detalhes */
+.detalhes-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #000;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    flex-wrap: wrap;
+}
+
+.detalhes-texto {
+    flex: 1;
+    color: #ccc;
+    font-style: italic;
+    font-size: 16px;
+    margin-right: 20px;
+    line-height: 1.6;
+    min-width: 280px;
+}
+
+.detalhes-imagem {
+    flex: 1;
+    text-align: center;
+    min-width: 280px;
+}
+
+.detalhes-imagem img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Habilidades */
+.habilidades {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.habilidades img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Páginas Sobre e Cadastro */
+.centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh;
+    flex-direction: column;
+    color: #ccc;
+    font-size: 18px;
+    padding: 20px;
+}
